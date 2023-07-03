@@ -1,141 +1,112 @@
+
+body{
+    background-image: linear-gradient(#9424F0,#FD297A );
+}
 .box{
     
-    height: 89vh;
-    width: 95vw;
-    padding: 2%;
-    background-image: linear-gradient(#FD297A, #9424F0);
-    
-    text-align: center;
+    height: 100%;
+    width: 100%;
+   
     color: white;
+    text-align: center;
+   
+
+}
+.heading{
+    margin-top:5% ;
+    margin-bottom: 10%;
 }
 h1{
-    margin-bottom: 5%;
+    margin: auto;
+    width: 20%;
+    text-align: center;
 }
 h2{ text-align: center;
-    margin-bottom: 16px;
-    
-    
-}
-
-.num{
-    padding-top: -30px;
-    margin-left: 43%;
-    height: 200px;
-    width: 200px;
     font-size: 60px;
-    border:solid 1px white;
-    border-radius: 100%;
-    text-align:center;
-    padding-bottom: 30px;
- 
 
-    
+      
 }
-
-.btn{
-    margin-top: 5%;
+.circle{ margin: auto;
+    width: 200px;
     display: flex;
     justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 200px;
+    border: white solid 1px;
+    border-radius: 50%;
+    
 
 }
+
 button{
-    
-    border:solid 1px;
-    border-color: white;
-    font-size: 45px;
-    border-radius: 80px;
-    background-color:transparent;
-    padding: 20px;
-    margin-top: 4%;
-   
-    margin-right: 30px;
-
-    color: rgb(113, 234, 193);
-    
-
+    width: 100px;
+    height: 100px;
+    margin:50px ;
+    margin-top: 7rem;
+    border: 1px solid white;
+    border-radius: 50%;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    text-align: center;
+    background-color: transparent;
+    color: white;
+    font-size: larger;
 
 }
-@media screen and (min-width: 786px)and(max-width: 1024px) {
-    .box{
-        margin: auto;
-        height: 80vh;
-        width: 80vw;
-        padding: 2%;
-        background-image: linear-gradient(#611c36, #674683);
-        
-        text-align: center;
-        color: white;
-    }
-    .num{
-        font-size: 70px;
-        border: 2px white;
-        border-radius: 50px;
-    
-    }
-    .btn{
+.btn-one{  width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    font-size: 70px;
+
+}
+.btn-three{   width: 50px;
+              height: 50px;
+              border-radius: 50%;
+              font-size: 25px;
+
+}
+
+
+
+@media screen and (max-width: 320px) {
+
+   .box {
         display: flex;
+        flex-direction:column;
+        text-align:center ;
+    }
+    h1{
+        margin-left: 40px;
+    }
+    .btn{  display: flex;
+        flex-direction:row;
         justify-content: center;
-        margin-top: 25px;
-       
-    
-    }
-
-    button{
-        border-color: rgb(252, 249, 249);
-        font-size: 25px;
-        border-radius: 100%;
-        background-color:transparent;
-        padding: 18px;
-        margin-left: 15px;
-        margin-right: 15px;
-        border: 6px;
-        color: rgb(113, 234, 193);
-        
-    
-    
-    }
-
-  }
-
-
-  @media screen and (min-width: 320px)and(max-width: 786px) {
-    .box{
-        margin: auto;
-        height: 80vh;
-        width: 80vw;
-        padding: 2%;
-        background-image: linear-gradient(#67052a, #a176c5);
-        
         text-align: center;
-        color: white;
-    }
-    .num{
-        font-size: 50px;
-        border: 2px white;
-        border-radius: 50px;
-    
-    }
-    .btn{
-        display: flex;
-        justify-content: center;
-        margin-top: 18px;
-       
-    
+
+
     }
 
-    button{
-        border-color: rgb(252, 249, 249);
-        font-size: 15px;
-        border-radius: 100%;
-        background-color:transparent;
-        padding: 12px;
-        margin-left: 18px;
-        margin-right: 18px;
-        border: 4px;
-        color: rgb(113, 234, 193);
+
+    .btn-one,.btn-two,.btn-three{
+        width: 40px;
+        height: 40px;
+        margin:20px ;
+        margin-top: 1rem;
+        border: 1px solid white;
+        border-radius: 50%;
+        text-align: center;
+        background-color: transparent;
+        color: rgb(28, 234, 217);
+        font-size: smaller;
+    }
+    .btn-two{  width: 60px;
+        height: 60px;
+        font-size: xx-small;
+        margin-top: 3rem;
         
-    
-    
     }
+}
 
-  }
+    
